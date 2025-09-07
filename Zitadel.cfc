@@ -4,14 +4,14 @@ component output="false" {
 		variables.lockTimeout = 20;
 		variables.sessionName = "zitadel_access_token";
 		variables.config = {
-			"client_id" 		= "",
-			"client_secret" 	= "",
-			"auth_url" 			= "/oauth/v2/authorize",
-			"token_url" 		= "/oauth/v2/token",
-			"redirect_url"		= "/callback.cfm",
-			"userinfo_url"		= "/oidc/v1/userinfo",
-			"logout_url"		= "/oidc/v1/end_session",
-			"post_logout_url"	= "http://127.0.0.1/",
+			"client_id" 		= "........",
+			"client_secret" 	= "........",
+			"auth_url" 			= "......../oauth/v2/authorize",
+			"token_url" 		= "......../oauth/v2/token",
+			"redirect_url"		= "......../callback.cfm",
+			"userinfo_url"		= "......../oidc/v1/userinfo",
+			"logout_url"		= "......../oidc/v1/end_session",
+			"post_logout_url"	= "........",
 			"scope"				= "openid profile email"	
 		}
 
@@ -27,9 +27,7 @@ component output="false" {
 				if ( structKeyExists( session, variables.sessionName ) ){
 					return true
 				}            
-			}
-
-			
+			}			
 
 		}catch(any e){
 
